@@ -7,7 +7,8 @@
 }
 
 body {
-    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
 }
 
 html {
@@ -16,9 +17,9 @@ html {
     font-family: var(--ff-primary)
 }
 
-
-
-
+.outer-container {
+    display: grid;
+}
 
 .guesses-container {
     margin: 0 auto;
@@ -33,12 +34,11 @@ html {
 }
 
 .container {
-    position: absolute;
+    grid-row: 1;
+    grid-column: 1;
     margin: 0 auto;
     display: grid;
-    top: 2%;
     z-index: 0;
-    width: 100%;
 }
 
 
@@ -92,6 +92,8 @@ h1 {
     text-align: center;
     font-size: 3rem;
     position: relative;
+    grid-row: 1;
+    grid-column: 1;
 }
 
 
