@@ -28,7 +28,7 @@ html {
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1em solid black;
+    border: 0.5em solid black;
 }
 
 .tip {
