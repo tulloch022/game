@@ -1,0 +1,35 @@
+html {
+    margin: 0 auto;
+}
+
+
+h1 {
+    text-align: center;
+}
+
+
+.grid-container {
+    display: grid;
+    justify-content: space-evenly;
+    grid-template-columns: auto auto auto auto auto auto auto auto ;
+    border: 6px solid black;
+    background-color: black;
+    width: 500px;
+    max-width: 500px;
+    height: 500px;
+    max-height: 500px;
+    margin: 0 auto;
+}
+
+
+.grid-item {
+    width: 60px;
+    height: 60px;
+    background-color: white;
+    color: white;
+}
+
+.grid-item:hover {
+    background-color: red;
+    color: red;
+}
