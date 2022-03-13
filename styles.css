@@ -131,8 +131,8 @@ h1 {
 
 
 .grid-item {
-    width: 60px;
-    height: 60px;
+    width: 3.5rem;
+    height: 3.5rem;
     background-color: rgb(211, 222, 213);
     color: white;
 }
