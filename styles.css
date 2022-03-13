@@ -12,7 +12,7 @@ body {
 
 html {
     margin: 0 auto;
-    background-color: #BDDAD1;
+    background-color: #799c91;
     font-family: var(--ff-primary);
 }
 
@@ -117,10 +117,9 @@ h1 {
 
 .grid-container {
     display: grid;
-    justify-content: space-evenly;
-    grid-template-columns: auto auto auto auto auto auto auto auto ;
-    border: 6px solid black;
-    background-color: black;
+    grid-template-columns: auto auto auto auto auto auto auto;
+    grid-template-rows: auto auto auto auto auto auto auto auto;
+    background-color: ;
     width: 100%;
     max-width: 500px;
     height: 500px;
