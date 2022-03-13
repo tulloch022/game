@@ -163,12 +163,9 @@ img {
     display: none;
 }
 
-.words {
+#words {
     text-align: center;
-    margin: 0 auto;
-    position: absolute;
-    bottom: 27%;
-    left: 18%;
+    margin: 5em auto;
     height: 10px;
     background-color: black;
     font-size: 6rem;
