@@ -7,14 +7,13 @@
 }
 
 body {
-    max-width: 500px;
     margin: 0 auto;
 }
 
 html {
     margin: 0 auto;
     background-color: #BDDAD1;
-    font-family: var(--ff-primary)
+    font-family: var(--ff-primary);
 }
 
 .outer-container {
@@ -103,7 +102,7 @@ h1 {
     grid-template-columns: auto auto auto auto auto auto auto auto ;
     border: 6px solid black;
     background-color: black;
-    width: 500px;
+    width: 100%;
     max-width: 500px;
     height: 500px;
     max-height: 500px;
@@ -125,7 +124,7 @@ h1 {
 img {
     margin: 0 auto;
     height: auto;
-    width: 515px;
+    width: 100%;
     z-index: 100000;
     position: absolute;
     display: none;
@@ -134,8 +133,8 @@ img {
 .winner {
     margin: 0 auto;
     position: absolute;
-    height: 800px;
-    width: 515px;
+    height: 100%;
+    width: 100%;
     background-color: white;
     color: black;
     display: none;
