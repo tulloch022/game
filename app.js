@@ -7,6 +7,15 @@ const theCat = document.querySelector("#cat");
 console.log(catLocation)
 
 
+//Make intro tip disappear
+
+const disappear = () => {
+    document.querySelector("#starter").style.display = "none";
+}
+
+setTimeout(function() {document.querySelector("#starter").style.display = "none"}, 5000)
+
+
 //Winner Screen
 
 const winnerScreen = document.querySelector("#winner");

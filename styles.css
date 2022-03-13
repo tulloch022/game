@@ -16,6 +16,25 @@ html {
     font-family: var(--ff-primary);
 }
 
+.starter {
+    margin: 0;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    height: 5rem;
+    width: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tip {
+    text-align: center;
+    font-weight: bold;
+}
+
 .outer-container {
     display: grid;
 }
