@@ -30,6 +30,12 @@ h1 {
 }
 
 .grid-item:hover {
-    background-color: red;
-    color: red;
+    background-color: purple;
+    color: purple;
+}
+
+
+
+#this1 {
+    background-color: black;
 }
