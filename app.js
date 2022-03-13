@@ -1,8 +1,16 @@
 //Plant cat randomly
 
 const catLocation = 'box'+(Math.floor(Math.random() * 56))
+const theCat = document.querySelector("#cat");
+
 
 console.log(catLocation)
+
+
+//Winner Screen
+
+const winnerScreen = document.querySelector("#winner");
+
 
 //Event: Clicked box
 
@@ -20,8 +28,10 @@ const clickBox = () => {
                  counter+=1;
                  guessTaker()        
              } else if (clickedBox.id == catLocation) {
-                 alert ('You WIN!');
-                 window.location.reload()};
+                 theCat.style.display = 'block';
+                 winnerScreen.style.display = 'block';
+                 setTimeout(function() {window.location.reload()},  5000)};
+
              }
     } else if (counter===15) { 
         console.log('uhh')
@@ -38,7 +48,3 @@ const clickBox = () => {
 const guessTaker = () => {
     document.querySelector("#guesses").innerText-=1;
 }
-
-
-//Check if cat is in box
-

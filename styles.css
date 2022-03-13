@@ -119,10 +119,37 @@ h1 {
     color: white;
 }
 
+
+
+
 img {
-    width: 60px;
-    height: 60px;
+    margin: 0 auto;
+    height: auto;
+    width: 515px;
+    z-index: 100000;
+    position: absolute;
     display: none;
+}
+
+.winner {
+    margin: 0 auto;
+    position: absolute;
+    height: 800px;
+    width: 515px;
+    background-color: white;
+    color: black;
+    display: none;
+}
+
+.words {
+    text-align: center;
+    margin: 0 auto;
+    position: absolute;
+    bottom: 27%;
+    left: 18%;
+    height: 10px;
+    background-color: black;
+    font-size: 6rem;
 }
 
 
