@@ -5,11 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="styles.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Roboto:wght@300&family=Slabo+27px&display=swap" rel="stylesheet">
     <title>This is a game</title>
 </head>
 <body>
     <div class="container">
-        <h1 id="welcome">Welcome to the game!</h1>
+        <h1 id="welcome">Find the cat!</h1>
         <div id="banner"></div>
     </div>
     <div class="grid-container">
@@ -71,7 +72,9 @@
         <div class="grid-item" id="box56" onClick="clickBox(box56)"></div>
 
     </div>
-    <h1 id="counter">Selected: 0</h1>
+    <div class="guesses-container">
+        <p>Guesses left: </p><p id="guesses">15</p>
+    </div>
     <script src="app.js"></script>
 </body>
 </html>
