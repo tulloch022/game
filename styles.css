@@ -16,8 +16,12 @@ html {
 
 
 h1 {
+    z-index: 1;
+    grid-area: title;
     text-align: center;
     font-size: 3rem;
+    position: relative;
+    left: -1em;
 }
 
 .guesses-container {
@@ -35,9 +39,15 @@ h1 {
 .container {
     margin: 0 auto;
     display: grid;
+    grid-template-areas:
+    "banner title"
+    "banner banner";
+    grid-template-columns: min-content max-content;
 }
 
-#banner {
+#banner1 {
+    z-index: 0;
+    grid-area: banner;
     width: 300px;
     height: 50px;
     background-color: teal;
@@ -46,11 +56,46 @@ h1 {
     transform: translate(0%, 0%);
 }
 
-#welcome {
-
+#banner2 {
+    z-index: 0;
+    grid-area: banner;
+    width: 300px;
+    height: 50px;
+    background-color: yellow;
     top: 0%;
-    left: 0%;
-    transform: translate(0%, 0%);
+    left: -50%;
+    transform: translate(0%, 40%);
+    opacity: 10%;
+}
+
+#banner3 {
+    z-index: 0;
+    grid-area: banner;
+    width: 300px;
+    height: 50px;
+    background-color: yellow;
+    top: 0%;
+    left: -50%;
+    transform: translate(0%, 70%);
+    opacity: 10%;
+}
+
+#banner4 {
+    z-index: 0;
+    grid-area: banner;
+    width: 300px;
+    height: 50px;
+    background-color: green;
+    top: 0%;
+    left: -50%;
+    transform: translate(0%, 90%);
+    opacity: 10%;
+}
+
+#welcome {
+    position: relative;
+    left: -1em;
+    top: -10%;
 }
 
 .grid-container {

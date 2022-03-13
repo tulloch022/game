@@ -1,6 +1,7 @@
 //Plant cat randomly
 
-const mineLocation = (Math.floor(Math.random() * 56))
+const catLocation = (Math.floor(Math.random() * 56))
+console.log(catLocation)
 
 
 //Event: Clicked box
@@ -26,8 +27,9 @@ const clickBox = () => {
 };
 
 
-//Update selected counter
 
+
+//Update selected counter
 
 const guessTaker = () => {
     document.querySelector("#guesses").innerText-=1;
