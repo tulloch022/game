@@ -150,7 +150,7 @@ img {
     width: 100%;
     z-index: 100000;
     position: absolute;
-    display: ;
+    display: none;
 }
 
 .winner {
@@ -160,7 +160,7 @@ img {
     width: 100%;
     background-color: #799c91;;
     color: black;
-    display: ;
+    display: none;
 
 }
 
