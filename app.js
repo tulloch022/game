@@ -1,8 +1,8 @@
 //Plant cat randomly
 
-const catLocation = (Math.floor(Math.random() * 56))
-console.log(catLocation)
+const catLocation = 'box'+(Math.floor(Math.random() * 56))
 
+console.log(catLocation)
 
 //Event: Clicked box
 
@@ -12,18 +12,22 @@ const clickBox = () => {
     if (counter < 15) {
         window.onclick = e => {
             let clickedBox = e.target;
+            console.log(clickedBox.id)
             const style = getComputedStyle(clickedBox);
             const backgroundColor = style.backgroundColor;
-             if (backgroundColor == "rgb(211, 222, 213)") {
+            if (backgroundColor == "rgb(211, 222, 213)" && clickedBox.id !== catLocation) {
                  clickedBox.style.backgroundColor = "black";
                  counter+=1;
                  guessTaker()        
+             } else if (clickedBox.id == catLocation) {
+                 alert ('You WIN!');
+                 window.location.reload()};
              }
-         }
-    } else { 
+    } else if (counter===15) { 
+        console.log('uhh')
         alert ('You ran out of guesses!');
-        window.location.reload()}
-        
+        window.location.reload()
+}
 };
 
 
@@ -34,4 +38,7 @@ const clickBox = () => {
 const guessTaker = () => {
     document.querySelector("#guesses").innerText-=1;
 }
+
+
+//Check if cat is in box
 

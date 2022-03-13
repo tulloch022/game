@@ -36,7 +36,7 @@ html {
     position: absolute;
     margin: 0 auto;
     display: grid;
-    top: 3%;
+    top: 2%;
     z-index: 0;
     width: 100%;
 }
@@ -117,7 +117,11 @@ h1 {
     color: white;
 }
 
-
+img {
+    width: 60px;
+    height: 60px;
+    display: none;
+}
 
 
 #this1 {
