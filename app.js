@@ -23,8 +23,10 @@ window.setInterval(makeCountdown, 1000);
 
 
 const disappear = () => {
-    document.querySelector("#starter").style.display = "none"
+    document.querySelector("#starter").style.display = "none";
 }
+
+setTimeout(disappear, 6000);
 
 
 //Winner Screen
