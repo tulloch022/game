@@ -7,13 +7,24 @@ const theCat = document.querySelector("#cat");
 console.log(catLocation)
 
 
-//Make intro tip disappear
 
-const disappear = () => {
-    document.querySelector("#starter").style.display = "none";
+//Countdown
+
+const makeCountdown = () => {
+    if (document.querySelector("#countdown").innerText > 0) {
+        document.querySelector("#countdown").innerText -=1;
+    }
 }
 
-setTimeout(function() {document.querySelector("#starter").style.display = "none"}, 5000)
+window.setInterval(makeCountdown, 1000);
+
+
+//Make intro tip disappear
+
+
+const disappear = () => {
+    document.querySelector("#starter").style.display = "none"
+}
 
 
 //Winner Screen
@@ -26,7 +37,7 @@ const winnerScreen = document.querySelector("#winner");
 counter = 0;
 const clickBox = () => {
     console.log(counter)
-    if (counter < 15) {
+    if (counter < 14) {
         window.onclick = e => {
             let clickedBox = e.target;
             console.log(clickedBox.id)
@@ -42,7 +53,7 @@ const clickBox = () => {
                  setTimeout(function() {window.location.reload()},  5000)};
 
              }
-    } else if (counter===15) { 
+    } else if (counter===14) { 
         console.log('uhh')
         alert ('You ran out of guesses!');
         window.location.reload()

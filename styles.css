@@ -16,6 +16,16 @@ html {
     font-family: var(--ff-primary);
 }
 
+.countdown {
+    text-align: center;
+    font-weight: bold;
+    font-family: var(--ff-secondary);
+    display: flex;
+    justify-content: center;
+}
+
+
+
 .starter {
     margin: 0;
     position: absolute;
@@ -23,15 +33,13 @@ html {
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: white;
-    height: 5rem;
+    height: 5.5rem;
     width: 10rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     border: 0.5em solid black;
 }
 
 .tip {
+    margin-top: 0.5em;
     text-align: center;
     font-weight: bold;
 }
